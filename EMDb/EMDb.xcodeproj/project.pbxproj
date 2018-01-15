@@ -13,6 +13,10 @@
 		4F691F20200CE10B00AAFE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F1F200CE10B00AAFE62 /* Assets.xcassets */; };
 		4F691F23200CE10B00AAFE62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F21200CE10B00AAFE62 /* LaunchScreen.storyboard */; };
 		4F8287C2200CE682001230A9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8287C1200CE682001230A9 /* CoreDataStack.swift */; };
+		4F8287C5200CFA51001230A9 /* EMDb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F8287C3200CFA51001230A9 /* EMDb.xcdatamodeld */; };
+		4F8287C7200CFE9D001230A9 /* RemoteiTunesMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8287C6200CFE9D001230A9 /* RemoteiTunesMovieService.swift */; };
+		4F8287C9200CFEC5001230A9 /* MovieManaged+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8287C8200CFEC5001230A9 /* MovieManaged+Mapping.swift */; };
+		4F8287CB200CFF04001230A9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8287CA200CFF04001230A9 /* Movie.swift */; };
 		BDDD620407D164A000404D35 /* Pods_EMDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF132F9B8B002A850D1F794 /* Pods_EMDb.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		4F691F22200CE10B00AAFE62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F691F24200CE10B00AAFE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8287C1200CE682001230A9 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = "../../EMDb-assets/code/CoreDataStack.swift"; sourceTree = "<group>"; };
+		4F8287C4200CFA51001230A9 /* EMDb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EMDb.xcdatamodel; sourceTree = "<group>"; };
+		4F8287C6200CFE9D001230A9 /* RemoteiTunesMovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteiTunesMovieService.swift; sourceTree = "<group>"; };
+		4F8287C8200CFEC5001230A9 /* MovieManaged+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieManaged+Mapping.swift"; sourceTree = "<group>"; };
+		4F8287CA200CFF04001230A9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		9420A2AAEE6551447806343F /* Pods-EMDb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMDb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMDb/Pods-EMDb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +78,10 @@
 				4F691F1F200CE10B00AAFE62 /* Assets.xcassets */,
 				4F691F21200CE10B00AAFE62 /* LaunchScreen.storyboard */,
 				4F691F24200CE10B00AAFE62 /* Info.plist */,
+				4F8287C3200CFA51001230A9 /* EMDb.xcdatamodeld */,
+				4F8287C6200CFE9D001230A9 /* RemoteiTunesMovieService.swift */,
+				4F8287C8200CFEC5001230A9 /* MovieManaged+Mapping.swift */,
+				4F8287CA200CFF04001230A9 /* Movie.swift */,
 			);
 			path = EMDb;
 			sourceTree = "<group>";
@@ -214,9 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8287CB200CFF04001230A9 /* Movie.swift in Sources */,
 				4F8287C2200CE682001230A9 /* CoreDataStack.swift in Sources */,
+				4F8287C7200CFE9D001230A9 /* RemoteiTunesMovieService.swift in Sources */,
+				4F8287C5200CFA51001230A9 /* EMDb.xcdatamodeld in Sources */,
 				4F691F1B200CE10B00AAFE62 /* ViewController.swift in Sources */,
 				4F691F19200CE10B00AAFE62 /* AppDelegate.swift in Sources */,
+				4F8287C9200CFEC5001230A9 /* MovieManaged+Mapping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +421,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F8287C3200CFA51001230A9 /* EMDb.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F8287C4200CFA51001230A9 /* EMDb.xcdatamodel */,
+			);
+			currentVersion = 4F8287C4200CFA51001230A9 /* EMDb.xcdatamodel */;
+			path = EMDb.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4F691F0D200CE10B00AAFE62 /* Project object */;
 }
