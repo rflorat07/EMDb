@@ -12,6 +12,7 @@
 		4F691F1E200CE10B00AAFE62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F1C200CE10B00AAFE62 /* Main.storyboard */; };
 		4F691F20200CE10B00AAFE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F1F200CE10B00AAFE62 /* Assets.xcassets */; };
 		4F691F23200CE10B00AAFE62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F21200CE10B00AAFE62 /* LaunchScreen.storyboard */; };
+		4F8287C2200CE682001230A9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8287C1200CE682001230A9 /* CoreDataStack.swift */; };
 		BDDD620407D164A000404D35 /* Pods_EMDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF132F9B8B002A850D1F794 /* Pods_EMDb.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		4F691F1F200CE10B00AAFE62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F691F22200CE10B00AAFE62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F691F24200CE10B00AAFE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8287C1200CE682001230A9 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = "../../EMDb-assets/code/CoreDataStack.swift"; sourceTree = "<group>"; };
 		9420A2AAEE6551447806343F /* Pods-EMDb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMDb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMDb/Pods-EMDb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 			children = (
 				4F691F18200CE10B00AAFE62 /* AppDelegate.swift */,
 				4F691F1A200CE10B00AAFE62 /* ViewController.swift */,
+				4F8287C1200CE682001230A9 /* CoreDataStack.swift */,
 				4F691F1C200CE10B00AAFE62 /* Main.storyboard */,
 				4F691F1F200CE10B00AAFE62 /* Assets.xcassets */,
 				4F691F21200CE10B00AAFE62 /* LaunchScreen.storyboard */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8287C2200CE682001230A9 /* CoreDataStack.swift in Sources */,
 				4F691F1B200CE10B00AAFE62 /* ViewController.swift in Sources */,
 				4F691F19200CE10B00AAFE62 /* AppDelegate.swift in Sources */,
 			);
