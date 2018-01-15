@@ -12,9 +12,12 @@
 		4F691F1E200CE10B00AAFE62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F1C200CE10B00AAFE62 /* Main.storyboard */; };
 		4F691F20200CE10B00AAFE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F1F200CE10B00AAFE62 /* Assets.xcassets */; };
 		4F691F23200CE10B00AAFE62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F691F21200CE10B00AAFE62 /* LaunchScreen.storyboard */; };
+		BDDD620407D164A000404D35 /* Pods_EMDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF132F9B8B002A850D1F794 /* Pods_EMDb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		374CD02C5A333CC0051C4033 /* Pods-EMDb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMDb.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMDb/Pods-EMDb.release.xcconfig"; sourceTree = "<group>"; };
+		3FF132F9B8B002A850D1F794 /* Pods_EMDb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMDb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F691F15200CE10B00AAFE62 /* EMDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F691F18200CE10B00AAFE62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F691F1A200CE10B00AAFE62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		4F691F1F200CE10B00AAFE62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F691F22200CE10B00AAFE62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F691F24200CE10B00AAFE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9420A2AAEE6551447806343F /* Pods-EMDb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMDb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMDb/Pods-EMDb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDD620407D164A000404D35 /* Pods_EMDb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4F691F17200CE10B00AAFE62 /* EMDb */,
 				4F691F16200CE10B00AAFE62 /* Products */,
+				C5EDB3A6966968D29A76C128 /* Pods */,
+				A49C6973FF58B9B84D320AF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = EMDb;
 			sourceTree = "<group>";
 		};
+		A49C6973FF58B9B84D320AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF132F9B8B002A850D1F794 /* Pods_EMDb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5EDB3A6966968D29A76C128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9420A2AAEE6551447806343F /* Pods-EMDb.debug.xcconfig */,
+				374CD02C5A333CC0051C4033 /* Pods-EMDb.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F691F27200CE10B00AAFE62 /* Build configuration list for PBXNativeTarget "EMDb" */;
 			buildPhases = (
+				BFA50F525E722541DF738DE2 /* [CP] Check Pods Manifest.lock */,
 				4F691F11200CE10B00AAFE62 /* Sources */,
 				4F691F12200CE10B00AAFE62 /* Frameworks */,
 				4F691F13200CE10B00AAFE62 /* Resources */,
+				F023450BDA2BA7E9B2B3C1E5 /* [CP] Embed Pods Frameworks */,
+				23E7713BF08148125DD098ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E7713BF08148125DD098ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EMDb/Pods-EMDb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA50F525E722541DF738DE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F023450BDA2BA7E9B2B3C1E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EMDb/Pods-EMDb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F691F11200CE10B00AAFE62 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		4F691F28200CE10B00AAFE62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9420A2AAEE6551447806343F /* Pods-EMDb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +364,7 @@
 		};
 		4F691F29200CE10B00AAFE62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374CD02C5A333CC0051C4033 /* Pods-EMDb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
